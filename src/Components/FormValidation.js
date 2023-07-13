@@ -27,8 +27,8 @@ const FormValidation = () => {
         event.preventDefault()
         if(user.name.length < 3 || user.name.length > 30){
             setSuccess("")
-            setError("Name should be min 3 char and max 30 char")
-            return
+           return  setError("Name should be min 3 char and max 30 char")
+            
         }
         else if(!user.email.includes("@") || !user.email.includes(".")){
             setSuccess("")
